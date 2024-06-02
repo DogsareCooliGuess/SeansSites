@@ -7,8 +7,6 @@ function updateTime() {
     timeElement.textContent = `${hours}:${minutes}:${seconds}`;
 }
 
-// Update the time every second
-setInterval(updateTime, 1000);
-
-// Initial call to display time immediately when the page loads
+// Update the time immediately and then every second
 updateTime();
+setInterval(updateTime, 1000);
